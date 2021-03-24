@@ -1,0 +1,124 @@
+html, body{
+        width: 450px;
+        margin: 0 auto;
+        background-color: #FCFCFC;
+        font-size: 12px;
+}
+
+.header{
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: center;
+    background-color: #4BB6B6;
+    height: 60px;
+}
+
+h1{
+    margin: 0 auto;
+    padding: 15px;
+}
+
+h2{
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+}
+
+p{
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+/*feature*/
+.feature{
+    
+}
+/*icon*/
+.icon{
+    width: 20%;
+    float: left;
+    height: 150px;
+}
+
+.iconMain{
+    width: 30px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 50px;
+    position: relative;
+}
+
+/*explenation*/
+.explenation{
+    width: 60%;
+    float: left;
+    height: 150px;
+}
+
+/*Slider*/
+.sliderClass{
+    float: left;
+    width: 20%;
+    height: 150px;
+}
+.sliderClassMain{
+    width: 35px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 65px;
+    position: relative;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 12px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #4BB6B6;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #4BB6B6;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
