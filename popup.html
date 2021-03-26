@@ -4,30 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="css/popup.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
         
         @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
     </style>
+    <title>Document</title>
 </head>
 <body>
     <div class="feature header">
             <h1>SHEPHERD</h1>
     </div>
-    <div class="feature https">
-        <div class="icon">
-            <div class="iconMain">
-                <img src="img/lock.png" alt="">
+    <div class="wrapper">
+    <div class="parent">
+
+        <!--https-->
+        <div class="grid item1"></div>
+        <div class="grid item2">
+            <div class="explenation">
+                <h2>HTTPS</h2>
+                <p>HTTPS alert zorgt ervoor dat u steeds op de
+                    hoogte word gehouden of de website die u 
+                    bezoekt beveiligd is.</p>
             </div>
         </div>
+        <div class="grid item3">
+            <div class="sliderClass">
+                <div class="sliderClassMain">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div> 
+        <!--end https-->
+
+        <!--logout-->
+    <div class="grid item4"></div>
+    <div class="grid item5">
         <div class="explenation">
-            <h2>HTTPS</h2>
-            <p>HTTPS alert zorgt ervoor dat u steeds op de
-                hoogte word gehouden of de website die u 
-                bezoekt beveiligd is.</p>
+            <h2>Automatisch uitloggen</h2>
+            <p>Zorg ervoor dat u steeds uitgelogd word wanneer
+                u klaar bent met het gebruik van een website. </p>
         </div>
+    </div>
+    <div class="grid item6">
         <div class="sliderClass">
             <div class="sliderClassMain">
                 <label class="switch">
@@ -37,15 +60,51 @@
             </div>
         </div>
     </div>
-    <div class="feature uitloggen">
-        <h2>Automatisch uitloggen</h2>
+    <!--end logout-->
+
+    <!--cookies-->   
+    <div class="grid item7"></div>
+    <div class="grid item8">
+        <div class="explenation2">
+            <h2>Cookies</h2>
+            <p>Wat zijn cookies en hoe modereer ik deze? 
+                Welke zijn relevant voor mij en welke niet?</p>
+        </div>
+        <a href="#" class="myButton">Cookies wissen</a>
     </div>
-    <div class="feature cookies">
-        <h2>Cookies</h2>
+    <div class="grid item9">
+        <div class="sliderClass">
+            <div class="sliderClassMain2">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </div> 
+    <!--end cookies-->  
+
+    <div class="grid item10"></div>
+    <div class="grid item11">
+        <div class="explenation">
+            <h2>Informeren</h2>
+            <p>Krijg informatieve meldingen om meer te leren
+                over veiligheid op het internet</p>
+        </div>
     </div>
-    <div class="feature informeren">
-        <h2>Informeren</h2>
+    <div class="grid item12">
+        <div class="sliderClass">
+            <div class="sliderClassMain">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </div> 
+    
+        </div>
     </div>
-    <script src="js/popup.js"></script>
+        <script src="js/popup.js"></script>
 </body>
 </html>
