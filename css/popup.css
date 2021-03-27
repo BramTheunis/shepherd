@@ -218,18 +218,55 @@ input:checked + .slider:before {
 
 /*end slider*/
 
-.meldingen{
+#btn1{
+  border-radius:28px;
+  border:1px solid #4BB6B6;
+  background: none;
+  cursor: pointer;
   margin-left: 130px;
   margin-top:  10px;
   font-size: 17px;
   font-family: 'Lato', sans-serif;
   float: left;
+
+}
+#btn2{
+  border-radius:28px;
+  border:1px solid #4BB6B6;
+  background: none;
+  cursor: pointer;
+  margin-left: 130px;
+  margin-top:  10px;
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  float: left;
+
 }
 
 .help{
   float: left;
-  margin-left: 235px;
+  margin-left: 220px;
   font-size: 17px;
   font-family: 'Lato', sans-serif;
   margin-top: 10px;
+}
+
+.help2{
+  float: left;
+  margin-left: 212px;
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  margin-top: 10px;
+}
+
+
+
+
+
+/*switch screen btn*/
+#div1 {
+  display: block;
+}
+#div2 {
+  display: none;
 }
