@@ -50,7 +50,7 @@ font-family: 'Lato', sans-serif;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 90px 270px 90px;
-  grid-template-rows: repeat(2, 120px) 170px 120px;
+  grid-template-rows: repeat(3, 120px) 170px;
   }
 
   .grid{
@@ -59,7 +59,7 @@ font-family: 'Lato', sans-serif;
   .item1{
       background-image: url(../img/Group\ 45@2x.png);
       background-repeat: no-repeat;
-      background-position: left;
+      background-position: center;
       background-size: auto 50px;
       border-bottom: #D2D2D2 1px solid;
       
@@ -71,12 +71,14 @@ font-family: 'Lato', sans-serif;
       border-bottom: #D2D2D2 1px solid;
   }
 
+
   .item4{
       background-image: url(../img/Group\ 38@2x.png);
       background-repeat: no-repeat;
-      background-position: left;
+      background-position: 20%;
       background-size: auto 50px;
       border-bottom: #D2D2D2 1px solid;
+
   }
   .item5{
     border-bottom: #D2D2D2 1px solid;
@@ -92,7 +94,7 @@ font-family: 'Lato', sans-serif;
   .item7{
       background-image: url(../img/Group\ 40@2x.png);
       background-repeat: no-repeat;
-      background-position: left;
+      background-position: center;
       background-size: auto 50px;
       border-bottom: #D2D2D2 1px solid;
   }
@@ -129,7 +131,7 @@ font-family: 'Lato', sans-serif;
   .item10{
       background-image: url(../img/Group\ 44.png);
       background-repeat: no-repeat;
-      background-position: left;
+      background-position: center;
       background-size: auto 50px;
       border-bottom: #D2D2D2 1px solid;
   }
@@ -150,6 +152,7 @@ font-family: 'Lato', sans-serif;
   margin: 0 auto;
   margin-top: 65px;
   position: relative;
+  border-radius: 25px;
 }
 .sliderClassMain2{
   width: 50px;
@@ -157,12 +160,13 @@ font-family: 'Lato', sans-serif;
   margin: 0 auto;
   margin-top: 65px;
   position: relative;
+  border-radius: 25px;
 }
 .switch {
   position: relative;
   display: inline-block;
   width: 50px;
-  height: 20px;
+  height: 25px;
 }
 
 .switch input { 
@@ -178,9 +182,11 @@ font-family: 'Lato', sans-serif;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: red;
+  background-color: #4BB6B6;
   -webkit-transition: .4s;
   transition: .4s;
+
+  margin-right: -4px;
 }
 
 .slider:before {
@@ -191,20 +197,24 @@ font-family: 'Lato', sans-serif;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
+  margin-top: 2.2px;
+  margin-left: 32px;
+  margin-right: 4px;
 }
 
 input:checked + .slider {
-  background-color: #4BB6B6;
+  background-color: red;
+  
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #4BB6B6;
+  box-shadow: 0 0 1px red;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(30px);
-  -ms-transform: translateX(30px);
-  transform: translateX(30px);
+  -webkit-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  transform: translateX(-30px);
 }
 
 /* Rounded sliders */
