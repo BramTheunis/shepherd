@@ -1,15 +1,12 @@
-chrome.tabs.query({currentWindow: true, active:true}, function(tabs) {
-    
-    let switchBtn = document.querySelector(".switchBtn2");
-    let switchValue = document.querySelector(".switchBtn2").value;
+let switchBtnLogout = document.querySelector(".switchBtn2");
+let switchValueLogout = document.querySelector(".switchBtn2").value;
 
-    switchBtn.addEventListener("click", function() {
-        if (switchValue == "On") {
-            switchValue = "Off";
-            localStorage.setItem("logout", "Off");
-        } else if (switchValue == "Off") {
-            switchValue = "On";
-            localStorage.setItem("logout", "On");
-        }
-    });
+switchBtnLogout.addEventListener("click", function() {
+    if (switchValueLogout == "On") {
+        switchValueLogout = "Off";
+        localStorage.setItem("logout", "Off");
+    } else if (switchValueLogout == "Off") {
+        switchValueLogout = "On";
+        localStorage.setItem("logout", "On");
+    }
 });

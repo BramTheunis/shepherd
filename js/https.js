@@ -1,15 +1,18 @@
-chrome.tabs.query({currentWindow: true, active:true}, function(tabs) {
-    
-    let switchBtn = document.querySelector(".switchBtn1");
-    let switchValue = document.querySelector(".switchBtn1").value;
+let switchBtnHTTPS = document.querySelector(".switchBtn1");
+let sliderHTTPS = document.querySelector(".sliderHTTPS");
+let httpsValue = localStorage.getItem("https");
 
-    switchBtn.addEventListener("click", function() {
-        if (switchValue == "On") {
-            switchValue = "Off";
-            localStorage.setItem("https", "Off");
-        } else if (switchValue == "Off") {
-            switchValue = "On";
-            localStorage.setItem("https", "On");
-        }
-    });
+if (httpsValue == "Off") {
+    sliderHTTPS.classList.add("sliderOff");
+    sliderHTTPS.classList.remove("slider");
+}
+
+switchBtnHTTPS.addEventListener("click", function() {
+    if (httpsValue == "On") {
+        httpsValue = "Off";
+        localStorage.setItem("https", "Off");
+    } else if (httpsValue == "Off") {
+        httpsValue = "On";
+        localStorage.setItem("https", "On");
+    }
 });
