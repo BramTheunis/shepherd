@@ -1,12 +1,18 @@
 let switchBtnInform = document.querySelector(".switchBtn3");
-let switchValueInform = document.querySelector(".switchBtn3").value;
+let sliderInform = document.querySelector(".sliderInform");
+let informValue = localStorage.getItem("inform");
+
+if (informValue == "Off") {
+    sliderInform.classList.add("sliderOff");
+    sliderInform.classList.remove("slider");
+}
 
 switchBtnInform.addEventListener("click", function() {
-    if (switchValueInform == "On") {
-        switchValueInform = "Off";
+    if (informValue == "On") {
+        informValue = "Off";
         localStorage.setItem("inform", "Off");
-    } else if (switchValueInform == "Off") {
-        switchValueInform = "On";
+    } else if (informValue == "Off") {
+        informValue = "On";
         localStorage.setItem("inform", "On");
     }
 });

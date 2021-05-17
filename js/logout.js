@@ -1,12 +1,18 @@
 let switchBtnLogout = document.querySelector(".switchBtn2");
-let switchValueLogout = document.querySelector(".switchBtn2").value;
+let sliderLogout = document.querySelector(".sliderLogout");
+let logoutValue = localStorage.getItem("logout");
+
+if (logoutValue == "Off") {
+    sliderLogout.classList.add("sliderOff");
+    sliderLogout.classList.remove("slider");
+}
 
 switchBtnLogout.addEventListener("click", function() {
-    if (switchValueLogout == "On") {
-        switchValueLogout = "Off";
+    if (logoutValue == "On") {
+        logoutValue = "Off";
         localStorage.setItem("logout", "Off");
-    } else if (switchValueLogout == "Off") {
-        switchValueLogout = "On";
+    } else if (logoutValue == "Off") {
+        logoutValue = "On";
         localStorage.setItem("logout", "On");
     }
 });
