@@ -1,3 +1,4 @@
+// START SWITCH FUNCTION
 let switchBtnInform = document.querySelector(".switchBtn3");
 let sliderInform = document.querySelector(".sliderInform");
 let informValue = localStorage.getItem("inform");
@@ -16,3 +17,4 @@ switchBtnInform.addEventListener("click", function() {
         localStorage.setItem("inform", "On");
     }
 });
+// END OF SWITCH FUNCTION

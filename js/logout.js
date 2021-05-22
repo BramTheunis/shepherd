@@ -1,3 +1,4 @@
+// START SWITCH FUNCTION
 let switchBtnLogout = document.querySelector(".switchBtn2");
 let sliderLogout = document.querySelector(".sliderLogout");
 let logoutValue = localStorage.getItem("logout");
@@ -16,3 +17,4 @@ switchBtnLogout.addEventListener("click", function() {
         localStorage.setItem("logout", "On");
     }
 });
+// END OF SWITCH FUNCTION
