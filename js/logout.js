@@ -18,3 +18,11 @@ switchBtnLogout.addEventListener("click", function() {
     }
 });
 // END OF SWITCH FUNCTION
+
+// START LOGOUT FUNCTION
+let logoutBtn = document.querySelector(".logoutBtn");
+
+logoutBtn.addEventListener("click", function() {
+    
+});
+// END LOGOUT FUNCTION
