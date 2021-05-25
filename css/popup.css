@@ -100,13 +100,6 @@ font-family: 'Lato', sans-serif;
       background-size: auto 50px;
       
   }
-  .item8{
-    
-  }
-
-  .item9{
-    
-  }
 
   .myButton {
       margin-left: 10px;
@@ -218,8 +211,8 @@ font-family: 'Lato', sans-serif;
 .sliderOff:before {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -251,9 +244,9 @@ input:checked + .slider:before {
 }
 
 input:checked + .sliderOff:before {
-  -webkit-transform: translateX(30px);
-  -ms-transform: translateX(30px);
-  transform: translateX(30px);
+  -webkit-transform: translateX(25px);
+  -ms-transform: translateX(25px);
+  transform: translateX(25px);
 }
 
 /* Rounded sliders */
