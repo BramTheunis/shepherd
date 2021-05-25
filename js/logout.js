@@ -1,4 +1,5 @@
 // START SWITCH FUNCTION
+/*
 let switchBtnLogout = document.querySelector(".switchBtn2");
 let sliderLogout = document.querySelector(".sliderLogout");
 let logoutValue = localStorage.getItem("logout");
@@ -17,12 +18,14 @@ switchBtnLogout.addEventListener("click", function() {
         localStorage.setItem("logout", "Off");
     }
 });
+*/
 // END OF SWITCH FUNCTION
 
 // START LOGOUT FUNCTION
 let logoutBtn = document.querySelector(".logoutBtn");
 
 logoutBtn.addEventListener("click", function() {
-    
+    let confirmation = confirm("Je gaat je uitloggen op alle accounts, ben je hier zeker van?");
+	
 });
 // END LOGOUT FUNCTION

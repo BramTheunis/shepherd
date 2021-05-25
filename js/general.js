@@ -1,5 +1,5 @@
 document.getElementById("btn1").addEventListener("click", switchVisible);
-document.getElementById("btn2").addEventListener("click", switchVisible);
+// document.getElementById("btn2").addEventListener("click", switchVisible);
 
 function switchVisible() {
     if (document.getElementById('div1')) {
