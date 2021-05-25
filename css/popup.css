@@ -14,23 +14,25 @@ html, body{
 font-family: 'Rubik Mono One', sans-serif;
 text-align: center;
 background-color: #4BB6B6;
-height: 30px;
+height: 50px;
 }
 
 /* text*/
 h1{
 margin: 0 auto;
-padding: 3px;
-font-size: 20px;
+padding: 15px;
+font-size: 16px;
+float: left;
+margin-left: 185px;
 }
 
 h2{
-font-size: 17px;
+font-size: 14px;
 font-family: 'Lato', sans-serif;
 }
 
 p{
-font-size: 14px;
+font-size: 12px;
 font-family: 'Lato', sans-serif;
 }
 
@@ -96,14 +98,14 @@ font-family: 'Lato', sans-serif;
       background-repeat: no-repeat;
       background-position: center;
       background-size: auto 50px;
-      border-bottom: #D2D2D2 1px solid;
+      
   }
   .item8{
-    border-bottom: #D2D2D2 1px solid;
+    
   }
 
   .item9{
-    border-bottom: #D2D2D2 1px solid;
+    
   }
 
   .myButton {
@@ -114,7 +116,6 @@ font-family: 'Lato', sans-serif;
       display:inline-block;
       cursor:pointer;
       color:#ffffff;
-      font-family:Arial;
       font-size:12px;
       padding:10px 25px;
       text-decoration:none;
@@ -150,7 +151,7 @@ font-family: 'Lato', sans-serif;
   width: 50px;
   height: auto;
   margin: 0 auto;
-  margin-top: 65px;
+  margin-top: 43px;
   position: relative;
   border-radius: 25px;
 }
@@ -165,8 +166,8 @@ font-family: 'Lato', sans-serif;
 .switch {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 25px;
+  width: 55px;
+  height: 35px;
 }
 
 .switch input { 
@@ -204,13 +205,13 @@ font-family: 'Lato', sans-serif;
 .slider:before, .sliderOff:before {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
   margin-top: 2.2px;
-  margin-left: 32px;
+  margin-left: 27px;
   margin-right: 4px;
 }
 
@@ -244,9 +245,9 @@ input:focus + .sliderOff {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(-30px);
-  -ms-transform: translateX(-30px);
-  transform: translateX(-30px);
+  -webkit-transform: translateX(-25px);
+  -ms-transform: translateX(-25px);
+  transform: translateX(-25px);
 }
 
 input:checked + .sliderOff:before {
@@ -268,14 +269,16 @@ input:checked + .sliderOff:before {
 
 #btn1{
   border-radius:28px;
-  border:1px solid #4BB6B6;
+  border:1px solid #FCFCFC;
   background: none;
   cursor: pointer;
-  margin-left: 130px;
   margin-top:  10px;
-  font-size: 17px;
+  font-size:12px;
   font-family: 'Lato', sans-serif;
-  float: left;
+  float: right;
+  margin-right: 20px;
+  padding:5px 25px;
+  color: #FCFCFC;
 
 }
 #btn2{
@@ -291,13 +294,7 @@ input:checked + .sliderOff:before {
 
 }
 
-.help{
-  float: left;
-  margin-left: 220px;
-  font-size: 17px;
-  font-family: 'Lato', sans-serif;
-  margin-top: 10px;
-}
+
 
 .help2{
   float: left;
@@ -314,6 +311,7 @@ input:checked + .sliderOff:before {
 /*switch screen btn*/
 #div1 {
   display: block;
+  margin-top: 20px;;
 }
 #div2 {
   display: none;
