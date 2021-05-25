@@ -9,12 +9,12 @@ if (informValue == "Off") {
 }
 
 switchBtnInform.addEventListener("click", function() {
-    if (informValue == "On") {
-        informValue = "Off";
-        localStorage.setItem("inform", "Off");
-    } else if (informValue == "Off") {
+    if (informValue == "Off") {
         informValue = "On";
         localStorage.setItem("inform", "On");
+    } else {
+        informValue = "Off";
+        localStorage.setItem("inform", "Off");
     }
 });
 // END OF SWITCH FUNCTION

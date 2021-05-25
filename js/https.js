@@ -9,12 +9,12 @@ if (httpsValue == "Off") {
 }
 
 switchBtnHTTPS.addEventListener("click", function() {
-    if (httpsValue == "On") {
-        httpsValue = "Off";
-        localStorage.setItem("https", "Off");
-    } else if (httpsValue == "Off") {
+    if (httpsValue == "Off") {
         httpsValue = "On";
         localStorage.setItem("https", "On");
+    } else {
+        httpsValue = "Off";
+        localStorage.setItem("https", "Off");
     }
 });
 // END OF SWITCH FUNCTION

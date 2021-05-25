@@ -9,12 +9,12 @@ if (logoutValue == "Off") {
 }
 
 switchBtnLogout.addEventListener("click", function() {
-    if (logoutValue == "On") {
-        logoutValue = "Off";
-        localStorage.setItem("logout", "Off");
-    } else if (logoutValue == "Off") {
+    if (logoutValue == "Off") {
         logoutValue = "On";
         localStorage.setItem("logout", "On");
+    } else {
+        logoutValue = "Off";
+        localStorage.setItem("logout", "Off");
     }
 });
 // END OF SWITCH FUNCTION
