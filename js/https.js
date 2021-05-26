@@ -27,9 +27,11 @@ chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
 
     // Wat moet er gebeuren bij veilige website, wat bij onveilige website
     if (protoc === "https") {
-        console.log('safe');
+        console.log("safe");
     } else if (protoc ===  "http") {
-        console.log("not safe");
+        chrome.runtime.sendMessage({protocol: "http"}, function(response) {
+            console.log("not so safe here");
+        });
     }
 });
 // END OF FUNCTION

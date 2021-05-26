@@ -31,5 +31,16 @@
     "https://*/*",
     "tabs",
     "notifications"
+  ],
+
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+
+  "content-scripts": [
+    {
+      "js": ["js/https.js"]
+    }
   ]
 }
