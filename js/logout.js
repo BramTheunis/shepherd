@@ -26,6 +26,8 @@ let logoutBtn = document.querySelector(".logoutBtn");
 
 logoutBtn.addEventListener("click", function() {
     let confirmation = confirm("Je gaat je uitloggen op alle accounts, ben je hier zeker van?");
-	
+	if (confirmation == true) {
+        // console.log("logged out everywhere");
+    }
 });
 // END LOGOUT FUNCTION

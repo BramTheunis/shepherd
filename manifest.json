@@ -25,6 +25,10 @@
     },
 
   "permissions": [
-    "activeTab"
-    ]
+    "activeTab",
+    "cookies",
+    "http://*/*",
+    "https://*/*",
+    "tabs"
+  ]
 }
