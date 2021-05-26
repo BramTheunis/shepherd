@@ -29,6 +29,7 @@
     "cookies",
     "http://*/*",
     "https://*/*",
-    "tabs"
+    "tabs",
+    "notifications"
   ]
 }
