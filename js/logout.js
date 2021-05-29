@@ -22,12 +22,14 @@ switchBtnLogout.addEventListener("click", function() {
 // END OF SWITCH FUNCTION
 
 // START LOGOUT FUNCTION
-let logoutBtn = document.querySelector(".logoutBtn");
+let logoutButton = document.querySelector(".logoutBtn");
 
-logoutBtn.addEventListener("click", function() {
-    let confirmation = confirm("Je gaat je uitloggen op alle accounts, ben je hier zeker van?");
-	if (confirmation == true) {
-        // console.log("logged out everywhere");
+logoutButton.addEventListener("click", function() {
+    let confirmationLogout = confirm("Je gaat je overal uitloggen, ben je hier zeker van?");
+	if (confirmationLogout == true) {
+        chrome.runtime.sendMessage({logout: "logoutAll"}, function(response) {
+            // message gets sent to background script where the logout happens
+        });
     }
 });
 // END LOGOUT FUNCTION
