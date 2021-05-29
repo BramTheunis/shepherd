@@ -10,3 +10,10 @@ chrome.runtime.onMessage.addListener(
         });
     }
 );
+
+chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse) {
+        if(request.cookies == "deleteCookies")
+        // delete cookies
+    }
+);
