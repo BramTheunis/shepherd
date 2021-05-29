@@ -31,7 +31,7 @@ if (httpsValue == "On") {
             console.log("safe");
         } else if (protoc ===  "http") {
             chrome.runtime.sendMessage({protocol: "http"}, function(response) {
-                
+                // message gets sent to background script.
             });
         }
     });
