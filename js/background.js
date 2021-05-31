@@ -1,3 +1,4 @@
+// Listen to message for HTTP/HTTPS feature
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         if(request.protocol == "http")
@@ -11,6 +12,7 @@ chrome.runtime.onMessage.addListener(
     }
 );
 
+// Listen to message for logout everywhere feature
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         if(request.logout == "logoutAll")
