@@ -1,17 +1,3 @@
-// Listen to message for HTTP/HTTPS feature
-chrome.runtime.onMessage.addListener(
-    function(request, sender, sendResponse) {
-        if(request.protocol == "http")
-        chrome.notifications.create("", {
-            title: "HTTPS alert",
-            message: "Deze website maakt GEEN gebruik van HTTPS. Verzonden gegevens zijn daarom mogelijk niet goed beveiligd.",
-            iconUrl: "img/logo128.png",
-            type: "basic",
-            priority: 2
-        });
-    }
-);
-
 // Listen to message for logout everywhere feature
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
@@ -23,3 +9,31 @@ chrome.runtime.onMessage.addListener(
         })
     }
 );
+
+// START HTTPS FEATURE
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+
+    let httpsValue = localStorage.getItem("https");
+
+    if (httpsValue == "On") {
+        if (changeInfo.status == "complete") {
+            chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+
+                // Variabelen definiëren voor protocol bepaling
+                let protoc = tabs[0].url.split(":")[0]
+            
+                // Wat moet er gebeuren bij veilige website, wat bij onveilige website
+                if (protoc === "http") {
+                    chrome.notifications.create("", {
+                        title: "HTTPS alert",
+                        message: "Deze website maakt GEEN gebruik van HTTPS. Verzonden gegevens zijn daarom mogelijk niet goed beveiligd.",
+                        iconUrl: "img/logo128.png",
+                        type: "basic",
+                        priority: 2
+                    });
+                }
+            });
+        }
+    }
+});
+// END HTTPS FEATURE
