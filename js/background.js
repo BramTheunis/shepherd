@@ -1,4 +1,4 @@
-// Listen to message for logout everywhere feature
+// Listen to message for deletion of cookies everywhere feature
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         if(request.cookies == "cookiesDelete")

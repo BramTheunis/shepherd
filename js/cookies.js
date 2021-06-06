@@ -1,4 +1,4 @@
-// START LOGOUT FUNCTION
+// START COOKIE FUNCTION
 let logoutButton = document.querySelector(".cookiesBtn");
 
 logoutButton.addEventListener("click", function() {
@@ -9,4 +9,4 @@ logoutButton.addEventListener("click", function() {
         });
     }
 });
-// END LOGOUT FUNCTION
+// END COOKIE FUNCTION
