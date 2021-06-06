@@ -1,7 +1,7 @@
 // Listen to message for logout everywhere feature
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
-        if(request.logout == "logoutAll")
+        if(request.cookies == "cookiesDelete")
         chrome.cookies.getAll({}, function(cookies) {
 			for(let i=0; i<cookies.length;i++) {
 				chrome.cookies.remove({url: "https://" + cookies[i].domain  + cookies[i].path, name: cookies[i].name});
