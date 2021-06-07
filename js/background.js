@@ -43,11 +43,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 
 
 // START LOGOUT FEATURE
-chrome.runtime.onMessage.addListener(
-    function(request, sender, sendResponse) {
-        if(request.logout == "facebook") {
-            chrome.cookies.remove({url: "https://www.facebook.com", name: "c_user"});
-        }
-    }
-)
+chrome.windows.onRemoved.addListener(function(windowId) {
+    chrome.cookies.remove({url: "https://www.facebook.com", name: "c_user"});
+});
 // END LOGOUT FEATURE
