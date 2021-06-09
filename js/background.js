@@ -44,6 +44,8 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 
 // START LOGOUT FEATURE
 chrome.windows.onRemoved.addListener(function(windowId) {
-    chrome.cookies.remove({url: "https://www.facebook.com", name: "c_user"});
+    //chrome.cookies.remove({url: "https://www.facebook.com", name: "c_user"});
+    //chrome.cookies.remove({url: "https://www.instagram.com", name:"sessionid"});
+    //chrome.cookies.remove({url: "https://www.google.be", name: "SAPISID"});
 });
 // END LOGOUT FEATURE
