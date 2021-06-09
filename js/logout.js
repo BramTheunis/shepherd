@@ -1,17 +1,20 @@
 // START LOGOUT FEATURE
+let switchBtnLogout = document.querySelector(".switchBtn2");
+let sliderLogout = document.querySelector(".sliderLogout");
+let logoutValue = localStorage.getItem("logout");
 
-let logoutBtn = document.querySelector(".logoutBtn");
+if (logoutValue == "Off") {
+    sliderLogout.classList.add("sliderOff");
+    sliderLogout.classList.remove("slider");
+}
 
-logoutBtn.addEventListener("click", function() {
-    let confirmationCookies = confirm("Je gaat je uitloggen op Facebook, ben je hier zeker van?");
-	if (confirmationCookies == true) {
-        // console.log("test1");
-        chrome.runtime.sendMessage({logout: "facebook"}, function(response) {
-            // message gets sent to background script where the logout happens
-            // console.log(" test2");
-        });
+switchBtnLogout.addEventListener("click", function() {
+    if (logoutValue == "Off") {
+        logoutValue = "On";
+        localStorage.setItem("logout", "On");
+    } else {
+        logoutValue = "Off";
+        localStorage.setItem("logout", "Off");
     }
-})
-
-
+});
 // END LOGOUT FEATURE
