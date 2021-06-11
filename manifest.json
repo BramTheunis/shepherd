@@ -39,9 +39,11 @@
     "persistent": false
   },
 
-  "content-scripts": [
+  "content_scripts": [
     {
-      "js": ["js/https.js"]
+      "matches": ["<all_urls>"],
+      "js": ["js/content.js"]
     }
   ]
+  
 }
