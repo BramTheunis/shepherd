@@ -12,9 +12,15 @@ switchBtnInform.addEventListener("click", function() {
     if (informValue == "Off") {
         informValue = "On";
         localStorage.setItem("inform", "On");
+        chrome.storage.local.set({inform: "On"}, function() {
+
+        });
     } else {
         informValue = "Off";
         localStorage.setItem("inform", "Off");
+        chrome.storage.local.set({inform: "Off"}, function() {
+
+        });
     }
 });
 // END OF SWITCH FUNCTION

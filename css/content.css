@@ -1,0 +1,12 @@
+.testClass {
+    position: absolute;
+    z-index: 999999999;
+    width: 18px;
+    height: 18px;
+    background: transparent no-repeat center
+      url("https://www.shepherd-extension.be/images/logoShepherd.png");
+    background-size: cover;
+    cursor: pointer;
+    right: 0;
+  }
+  

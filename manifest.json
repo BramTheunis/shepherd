@@ -31,7 +31,8 @@
     "http://*/*",
     "https://*/*",
     "tabs",
-    "notifications"
+    "notifications",
+    "storage"
   ],
 
   "background": {
@@ -44,6 +45,11 @@
       "matches": ["<all_urls>"],
       "js": ["js/content.js"]
     }
+  ],
+
+  "web_accessible_resources": [
+    "img/*", 
+    "css/*.css"
   ]
   
 }

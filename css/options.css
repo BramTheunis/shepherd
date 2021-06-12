@@ -4,6 +4,10 @@ body {
 	height: 100%;
 }
 
+h1 {
+    text-align: center;
+}
+
 details {
     background-color: lightblue;
     padding-bottom: 1rem;

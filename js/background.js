@@ -55,3 +55,18 @@ chrome.windows.onRemoved.addListener(function(windowId) {
     }
 });
 // END LOGOUT FEATURE
+
+/*
+chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse) {
+        if(request.inform == "forms")
+        chrome.notifications.create("", {
+            title: "Input controle",
+            message: "Zorg ervoor dat je zeker weet dat blabla",
+            iconUrl: "img/logo128.png",
+            type: "basic",
+            priority: 2
+        });
+    }
+)
+*/
