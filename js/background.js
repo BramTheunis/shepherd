@@ -1,3 +1,26 @@
+chrome.runtime.onInstalled.addListener(function() {
+    let httpsValue = localStorage.getItem("logout");
+    let informValue = localStorage.getItem("inform");
+    let logoutValue = localStorage.getItem("logout");
+
+    if (httpsValue = "null") {
+        localStorage.setItem("https", "On");
+        
+    }
+
+    if (informValue = "null") {
+        localStorage.setItem("inform", "On");
+        chrome.storage.local.set({inform: "On"}, function() {
+
+        });
+    }
+
+    if (logoutValue = "null") {
+        localStorage.setItem("logout", "On");
+    }
+});
+
+
 // Listen to message for deletion of cookies everywhere feature
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
