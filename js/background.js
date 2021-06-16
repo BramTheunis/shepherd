@@ -49,7 +49,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
             
                 // Wat moet er gebeuren bij veilige website, wat bij onveilige website
                 if (protoc === "http") {
-                    /*
+                    
                     chrome.notifications.create("", {
                         title: "HTTPS alert",
                         message: "Deze website maakt GEEN gebruik van HTTPS. Verzonden gegevens zijn daarom mogelijk niet goed beveiligd.",
@@ -57,8 +57,8 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
                         type: "basic",
                         priority: 2
                     });
-                    */
-                    alert("Deze website maakt GEEN gebruik van HTTPS. Verzonden gegevens zijn daarom mogelijk niet goed beveiligd.");
+                    
+                    // alert("Deze website maakt GEEN gebruik van HTTPS. Verzonden gegevens zijn daarom mogelijk niet goed beveiligd.");
                 }
             });
         }
@@ -69,8 +69,9 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 
 
 // START LOGOUT FEATURE
-chrome.windows.onRemoved.addListener(function(windowId) {
+window.onbeforeunload = logoutCode();
 
+function logoutCode() {
     let logoutValue = localStorage.getItem("logout");
 
     if (logoutValue == "On") {
@@ -79,7 +80,8 @@ chrome.windows.onRemoved.addListener(function(windowId) {
         chrome.cookies.remove({url: "https://www.google.be", name: "SAPISID"});
         chrome.cookies.remove({url: "https://www.google.com", name: "SAPISID"});
     }
-});
+    return null;
+}
 // END LOGOUT FEATURE
 
 /*

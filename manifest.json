@@ -3,7 +3,7 @@
 
   "name": "Shepherd",
   "description": "Een extensie voor digibeten, door digiweten",
-  "version": "2.0",
+  "version": "2.1",
   "options_page": "options.html",
 
   "browser_action": {
@@ -26,7 +26,6 @@
     },
 
   "permissions": [
-    "activeTab",
     "cookies",
     "http://*/*",
     "https://*/*",
